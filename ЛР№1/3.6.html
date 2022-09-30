@@ -1,0 +1,32 @@
+<!-- Написати скрипт, що реалізовує складання двох чисел по клацанню на кнопці. -->
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Складання двох чисел</title>
+ 
+		<script>
+		function addition() {
+			var a = parseInt(document.getElementById('a').value);
+			var b = parseInt(document.getElementById('b').value);
+ 
+			if (isNaN(a)==true) a=0;
+			if (isNaN(b)==true) b=0;
+ 
+			var c = a + b;
+ 
+			document.getElementById('result').innerHTML = a + " + " + b + " = " + c;
+		}
+		</script>
+	</head>
+	<body>
+		<form>
+			<input id="a" type="text" value="1"><br>
+			<input id="b" type="text" value="1"><br>
+			<input type="button" value="Скласти 2 числа" onclick="addition();"><br>
+		</form>
+	<div id="result"></div>
+	</body>
+</html>

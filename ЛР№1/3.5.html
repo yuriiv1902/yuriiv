@@ -1,0 +1,21 @@
+<!-- Складіть документ так, щоб діалогове вікно для введення інформації пропонувалося тільки після наведення курсора миші на посилання, і введений користувачем текстовий рядок виводився б у вигляді діалогового вікна, або у вікно браузеру. -->
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+</head> 
+<body> 
+    <div id="welcome"> 
+        <A HREF="" onMouseOver= " const name = prompt('Будь ласка, введіть нікнейм');  if (name) { 
+          alert(document.querySelector('#welcome').innerHTML = 'Вітаю! ' + name); 
+        } else { 
+          alert(document.querySelector('#welcome').innerHTML = '<b>Анонім</b>, вітаю!'); 
+        } ">Select me!</A> 
+    </div> 
+    <script type="text/javascript"> 
+        </script> 
+</body> 
+</html>

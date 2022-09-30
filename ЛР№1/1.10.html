@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <TITLE>Hello, world! </TITLE>
+    <SCRIPT LANGUAGE="JavaScript">
+        var n = 10;
+        var szHelloMsg = "Hello, world!";
+        function printNString(szString, n)
+        {
+        var i;
+        for (i = 0; i < n; i++)
+        {
+        document.write(szString.bold() + "<BR>");
+        }
+        }
+        function printHello()
+        {
+        printNString(szHelloMsg, 10);
+        }
+        </SCRIPT>
+</head>
+<BODY BGCOLOR=white>
+    <H1>JavaScript Test</H1>
+    <P>Message:<BR>
+    <SCRIPT LANGUAGE="JavaScript">
+    printHello();
+    </SCRIPT>
+    </BODY>
+</html>
