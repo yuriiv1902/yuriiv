@@ -1,0 +1,42 @@
+<!-- Напишіть скрипт, який запитує два числа і виводить у вікні браузеру найбільше з них. -->
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Максимальне число</title>
+ 
+		<script>
+		function addition() {
+			var a = parseInt(document.getElementById('a').value);
+			var b = parseInt(document.getElementById('b').value);
+ 
+			if (isNaN(a)==true) a=0;
+			if (isNaN(b)==true) b=0;
+ 
+            if (a>b)
+            {
+                document.getElementById("result").innerHTML = a;      
+            }
+            else if(b>a)
+            {
+                document.getElementById("result").innerHTML = b;
+            }
+            else
+            {
+                document.getElementById("result").innerHTML = "Числа рівні";
+            }
+			
+		}
+		</script>
+	</head>
+	<body>
+		<form>
+			<input id="a" type="text" value="1"><br>
+			<input id="b" type="text" value="1"><br>
+			<input type="button" value="Визначити масимальне" onclick="addition();"><br>
+		</form>
+	<div id="result"></div>
+	</body>
+</html>

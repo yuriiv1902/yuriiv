@@ -1,0 +1,21 @@
+<!-- Напишіть скрипт, який запрошує у користувача інформацію, а потім виводить її в діалоговому вікні. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="welcome"></div>
+    <script>
+        const name = prompt('Будь ласка, введіть нікнейм');
+        if (name) {
+          alert(document.querySelector('#welcome').innerHTML = `${name}, вітаю!`);
+        } else {
+          alert(document.querySelector('#welcome').innerHTML = '<b>Анонім</b>, вітаю!');
+        }
+        </script>
+</body>
+</html>
