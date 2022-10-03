@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Іванків Юрій ПІ-19-02</title>
+</head>
+<body>
+    <form style="text-align: center;">
+        <p>
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="user_name">
+        </p>
+        <p><label for="taste">Що вам більше подобається: </label></p>
+        <p>
+            <input type="radio" name="taste" value="Морозиво" onclick="chooseTaste()">Морозиво
+            <input type="radio" name="taste" value="Шоколад" onclick="chooseTaste()">Шоколад
+        </p>
+        <p><input type="submit" value="Відправити" onclick="goodBye()"></p>
+    </form>
+    <script>
+        function chooseTaste()  {
+            let myTaste = myform.elements.taste.value;
+            window.status = "Ви обрали " + myTaste + "!";
+            //alert додатково
+            alert("Ви обрали " + myTaste + "!");
+        }
+
+        function goodBye()  {
+            alert("Дякуємо за участь в опитуванні!");
+        }
+        
+        let myform = document.forms[0];
+        myform.elements.user_name.placeholder = "Впишіть сюди своє ім'я";
+ 
+    </script>
+</body>
+</html>

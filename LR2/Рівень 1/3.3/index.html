@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Іванків Юрій ПІ-19-02</title>
+    <style>
+        img{
+            display: inline; 
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <img name = "img1" src="./img/1.gif" alt="" onmouseover="mouseMove(1, true)" onmouseout="mouseMove(1, false)">
+    <img name = "img2" src="./img/2.gif" alt="" onmouseover="mouseMove(2, true)" onmouseout="mouseMove(2, false)">
+    <img name = "img3" src="./img/3.gif" alt="" onmouseover="mouseMove(3, true)" onmouseout="mouseMove(3, false)">
+
+    <script>
+        function mouseMove(num, change) {
+            switch(num){
+                case 1: {
+                    (change == true) ? document.img1.src = './img/4.gif' : document.img1.src = './img/1.gif';
+                    break;
+                }
+                case 2: {
+                    (change == true) ? document.img2.src = './img/5.gif' : document.img2.src = './img/2.gif';
+                    break;
+                }
+                case 3: {
+                    (change == true) ? document.img3.src = './img/6.gif' : document.img3.src = './img/3.gif';
+                    break;
+                }
+            } 
+        }
+    </script>
+</body>
+</html>
