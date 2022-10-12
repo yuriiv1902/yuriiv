@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Іванків Юрій ПІ-19-02</title>
+    <script>
+        function time()
+        {
+            vr = new Date();
+            if(vr.getSeconds() % 30 == 0) {
+                document.myForm.chas.value= vr.getHours() + ":" + vr.getMinutes() + ":" + vr.getSeconds();
+                alert("Увага! Змінився час! Зараз - " + vr.getHours() + ":" + vr.getMinutes() + ":" + vr.getSeconds());
+            }
+            setTimeout("time()", 1000);
+        }
+    </script>
+</head>
+<body>
+    <form name="myForm">
+        <input style="font-size: 100px;" type="textbox" name="chas" size=4 disabled>
+    </form>
+    <script>
+        time();
+    </script>
+</body>
+</html>
