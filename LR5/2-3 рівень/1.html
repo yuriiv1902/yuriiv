@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Іванків Юрій ПІ-19-02</title>
+</head>
+<body>
+    <label for="phone">Введіть свій номер:</label>
+    <input type="text" id="phone" onblur="this.value=testPhoneNumber(this.value);"></input>
+    <script>
+        function testPhoneNumber(str)
+        {
+            if(!str.length)
+                alert("Номер мобільного телефону задано некоректно");
+            var cellPhoneTemplate = new RegExp("8?((063)|(093)|(097)|(098)|(099)|(095)|(067)|(068)|(050))[0-9]{7}");
+            str = str.replace(cellPhoneTemplate,"");
+            if(str == "")
+                alert("Номер мобільного телефону України задано коректно");
+            else
+                alert("Невідомий оператор");
+        }
+    </script>
+
+</body>
+</html>
