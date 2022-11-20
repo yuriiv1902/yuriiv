@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+  }
+  
+  body {
+    width: 40vw;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 50px 50px;
+    border-radius: 35px;
+    font-size: 18px;
+  }
+.massage {
+  background-color: rgb(172, 280, 40);
+  border-top: 1px solid rgb(49, 206, 14);
+  border-bottom: 1px solid rgb(101, 197, 79);
+  padding: 10px 20px;
+  }
+button {
+  background-color: bisque;
+  padding: 5px 10px;
+  font-weight: 700;
+}
