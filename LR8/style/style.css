@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(15, 210, 120);
+} 
+.wrap{
+    display: flex;
+    justify-content: center;   
+}
+
+#tabs .tab {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+
+#tabs .whiteborder {
+    border: 5px solid #000000;
+    border-bottom: 1px solid rgb(280, 120, 240);
+    border-radius: 3px 3px 0 0;
+}
+
+#tabs .tabContent {
+    width: 400px;
+    height: 600px;
+    border: 6px solid #000000;
+    position: relative;
+    top: -1px;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    
+}
+
+#tabs .hide {
+    display: none;
+
+}
+
+#tabs .show {
+    display: block;
+}
+
+
+/* tab 1 */
+
+#block {
+    width: 200px;
+    height: 200px;
+    background: rgb(150, 0, 50);
+}
+
+
+h1 {
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 250%;
+   } 
+   p {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 11pt;
+   }
+
+
+.grid {
+	display: table;	
+	width: 100%;
+	border: none;
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+.grid-tr {
+	 display: table-row;
+}
+.grid-td {
+	display: table-cell;	
+	width: 33.3%;
+	vertical-align: top;
+	padding: 0;
+}
+#footer-block3 {
+    width: 300px;
+    height: 150px;
+    border: 1px solid #e98383;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-block3 div {
+    width: 90px;
+    height: 70px;
+}

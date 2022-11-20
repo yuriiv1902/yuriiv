@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Іванків Юрій ПІ-19-02</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+    <div id="tabs">
+        <div class="tab whiteborder">Tab 1</div>
+        <div class="tab">Tab 2</div>
+        <div class="tab">Tab 3</div>
+        <div class="tabContent">
+            <div class="block1">
+                <p>Верхній лівий радіус:
+                    <input type="range" id="rtl" min="0" max="100" value="0" oninput="fun1()">
+                    <input type="text" id="ttl" value="0">
+                </p>
+                <p>Верхній правий радіус:
+                    <input type="range" id="rtr" min="0" max="100" value="0" oninput="fun1()">
+                    <input type="text" id="ttr" value="0">
+                </p>
+                <p>Нижній правий радіус:
+                    <input type="range" id="rbr" min="0" max="100" value="0" oninput="fun1()">
+                    <input type="text" id="tbr" value="0">
+                </p>
+                <p>Нижній лівий радіус:
+                    <input type="range" id="rbl" min="0" max="100" value="0" oninput="fun1()">
+                    <input type="text" id="tbl" value="0">
+                </p>
+            </div>
+            <div class="footer-block">
+                <div id="block"></div>
+                <div class="code">
+                    <p>Code:</p>
+                    <textarea name="output" id="output" cols="40" rows="3">border-radius: 0px</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="tabContent">
+            <div class="block2">
+              
+                <h1>font-size</h1>
+                <p>Властивість font-size встановлює розмір шрифту. Розмір шрифту - це висота від базової лінії літери до її верхнього краю.
+                    Розмір шрифту - це висота від базової лінії літери до її верхнього краю. Різні шрифти мають різні висоти. Таким чином, один шрифт може виглядати більшим за заданим розміром, ніж інший шрифт. Це добре, якщо ви маєте справу лише з одним шрифтом. Але ми, як правило, розглядаємо список шрифтів: шрифт першого вибору, а потім один або декілька "резервних" шрифтів, якщо користувач не має першого шрифту.
+                </p>
+           
+            </div>
+            <div class="code">
+                <p></p>
+                
+            </div>
+        </div> <div class="tabContent">
+            <div class="block3">
+                 <h2>display</h2>
+                <div class="grid">
+                    <div class="grid-tr">
+                        <div class="grid-td">
+                           
+                            <div class="item">Блок №1</div>
+                        </div>
+                        <div class="grid-td">
+                            <div class="item">Блок №2</div>
+                        </div>
+                        <div class="grid-td">
+                            <div class="item">Блок №3</div>
+                        </div>
+                    </div>
+                    <div class="grid-tr">
+                        <div class="grid-td">
+                            <div class="item">Блок №4</div>
+                        </div>
+                        <div class="grid-td">
+                            <div class="item">Блок №5</div>
+                        </div>
+                        <div class="grid-td">
+                            <div class="item">Блок №6</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>flex-direction:</h2>
+                <input type="radio" id="row" name="flex-direction" value="row" oninput="fun3()" checked>
+                <label for="row">row</label><br>
+                <input type="radio" id="row-reverse" name="flex-direction" value="row-reverse" oninput="fun3()">
+                <label for="row-reverse">row-reverse</label><br>
+                <input type="radio" id="column" name="flex-direction" value="column" oninput="fun3()">
+                <label for="column">column</label><br>
+                <input type="radio" id="column-reverse" name="flex-direction" value="column-reverse" oninput="fun3()">
+                <label for="column-reverse">column-reverse</label>
+            </div>
+            <div id="footer-block3">
+                <div id="first-direction" style="background-color:rgb(22, 18, 253);">1</div>
+                <div id="second-direction" style="background-color:rgb(23, 179, 231);">2</div>
+                <div id="third-direction" style="background-color:rgb(55, 225, 231);">3</div>
+            </div>
+            <div class="code">
+                <p>Code:</p>
+                <textarea name="output3" id="output3" cols="40" rows="5">flex-direction: row</textarea>
+            </div>
+        </div>
+    </div>
+</div>
+       
+    <script src="js/app.js"></script>
+</body>
+
+</html>
