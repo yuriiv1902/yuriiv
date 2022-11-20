@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href= "style.css">
+	<title>Іванків Юрій ПІ-19-02</title>
+</head>
+<body>
+	<header class="bg-success text-white p-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="header">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="wrap mt-3">
+		<h2>Добавити запис</h2>
+		<label id="lblsuccess" class="text-success"></label>
+		<form id="addForm">
+			<div class="row">
+				<div class="col-lg-7 col-md-7 col-sm-7">
+					<input type="text" onkeyup="toggleButton(this, 'submit')"class="form-control" id="item">
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-5">
+				<input type="submit" class="btn btn-dark" id="submit" value="Додати" disabled>
+				</div>
+			</div>
+		</form>
+		<h3 class="mt-4">Список записів</h3>
+		<form id="addForm">
+			<ul class="list-group" id="items" onclick="doneItem(e)"></ul>
+		</form>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>

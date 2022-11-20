@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+    border: 1px solid #000;
+    min-width: 250px;
+  }
+  
+  /* Include the padding and border in an element's total width and height */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #a3a3a3;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #333;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  header {
+    height: 200px;
+    background-color: rgb(190, 100, 60);
+  }
+  .header span {
+    font-size: 71px;
+    font-weight: 700;
+    color: black;
+    display: block;
+    padding: 50px 0 0 200px;
+    text-align: center;
+  }
+.wrap{
+  padding-left:30%;
+
+
+  margin: 0 auto;
+}
+.row {
+ display: inline-flex;
+ gap: 20px;
+}
+.form-control {
+  padding: 8px 10px;
+  width: 400px;
+}
+.btn-dark{
+  background-color: rgb(340, 150, 80);
+  padding: 8px 15px;
+  color: #fff;
+}
+.list-group{
+  background-color: #fff;
+}
+#addForm {
+  width: 900px;
+}
+.list-group{
+  align-items: center;
+}
+.list-group-item{
+  height: 60px;
+ 
+}
+.btn-danger {
+  padding: 8px 10px;
+  float: right;
+  background-color: rgb(133, 0, 275);
+  color: white;
+  border-radius: 0px;
+}
+.btn-danger:hover {
+  background-color: rgb(133, 0, 275);
+}
+.btn-success {
+  padding: 8px 10px;
+  float: right;
+  background-color: rgb(64, 100, 70);
+  color: white;
+  border-radius: 0px;
+}
+.btn-success:hover{
+  background-color: rgb(64, 100, 70);
+}
+.text-success {
+  display: none;
+  color: rgb(0, 0, 0);
+}
