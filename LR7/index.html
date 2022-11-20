@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Іванків Юрій ПІ-19-02</title>
+</head>
+
+<body>
+
+  <div class="wrap">
+    <h1>Лабораторна робота №7</h1>
+  
+    <h1>Завдання:</h1>
+    <p><b>1.</b>Створити код, який за величиною температури за шкалою Фаренгейта обчислює
+      величину температури в градусах Цельсія і навпаки. Веб-сторінка має два текстових поля:
+      
+      температура за Фаренгейтом
+      температура за Цельсієм
+      які містять відповідні числа.  </p>
+    <button onClick="Hint('1')">Виконання</button>
+    <p>  <b>2.</b> Написати код, який перевіряє знання таблиці множення. Веб-сторінка містить
+текстовий напис для показу загального рахунку, кнопку «наступне завдання», текстовий
+напис для показу завдання, текстове поле для вводу відповіді, кнопку «перевірити» та
+текстовий напис для виводу результатів перевірки.
+Завдання повинні генеруватися випадковим чином.
+    </p>
+    <button onClick="Hint('2')">Виконання</button>
+    <p><b>3.</b> Написати код, який перевіряє знання таблиці множення як і в завданні 2, але для
+      вибору правильної відповіді використайте радіокнопки. Вибір варіанту відповіді є сигналом
+      до початку перевірки. Для кожного завдання користувач має лише одна спробу вибору.
+      Варіанти відповіді згенерувати випадковим чином.</p>
+    <button onClick="Hint('3')">Виконання</button>
+    </div>
+
+  <div class="tooltip" id="1">
+    <div class="tooltipBG" onclick="Exit()"></div>
+    <div class="container">
+      <p>За Фарангейтом t: </p>
+  <input type="text" class="farenheit-input" />
+  <p>За Цельсієм t: </p>
+  <input type="text" class="celcium-input" />
+    </div>
+  </div>
+
+  <div class="tooltip" id="2">
+    <div class="tooltipBG" onclick="Exit()"></div>
+    <div class="container">
+      <h2>Загальний рахунок: <span id="correct-score"></span> від <span id="total-score">10</span></h2>
+  <button id="next-task">Наступне завдання</button>
+
+  <div class="gameField" style="display: flex; align-items: center;">
+    <h3><span id="firstNum"></span> x <span id="secondNum"></span> =</h3>
+    <input type="text" style="margin-left: 5px" id="userInput"/>
+    <button id="check-btn">Перевірте</button>
+  </div>
+  <p>Неправильна, правильна відповідь <span id="correct-answer"></span></p>
+ 
+    </div>
+  </div>
+
+  <div class="tooltip" id="3">
+    <div class="tooltipBG" onclick="Exit()"></div>
+    <div class="container">
+      
+  <h2>Total score: <span id="correct-score"></span> from <span id="total-score">10</span></h2>
+  <button id="next-task">Next task</button>
+
+  <div class="gameField">
+    <h3><span id="firstNum"></span> x <span id="secondNum"></span> =</h3>
+    <div>
+      <input type="radio" name="answer" value="-1922" id="choice1">
+      <label for="choice1">-1922</label>
+
+      <input type="radio" name="answer" value="12476" id="choice2">
+      <label for="choice2">12476</label>
+
+      <input type="radio" name="answer" value="other" id="choice3">
+      <label for="choice3">don't have a correct answer</label>
+
+    </div>
+    <button id="check-btn">Check</button>
+  </div>
+  <p>Wrong, right answer is <span id="correct-answer"></span></p>
+  
+    </div>
+  </div>
+
+  
+</div>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

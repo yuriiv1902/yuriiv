@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #000000;
+  color: #f7f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.tooltip {
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.tooltipBG {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  background: #000000;
+}
+
+.active {
+  visibility: visible;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #000000;
+  /* width: 95vw;
+  min-height: 50vh; */
+  border-radius: 28px;
+  padding: 30px 30px;
+}
+
+button {
+  background: #000000;
+  color: #FEFAE0;
+  font-style: italic;
+  padding: 5px 10px;
+  border: 1px solid #FEFAE0;
+  border-radius: 8px;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+h1 {
+  margin: 10px 0px;
+}
+
+.error p{
+  font-size: calc(100vw/3);
+}
